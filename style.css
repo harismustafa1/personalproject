@@ -1,0 +1,80 @@
+
+body{
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(208, 166, 80);
+    
+      
+
+}
+#section1{
+    background-color: rgb(36, 74, 165);
+    height: 800px;
+    background-image: url("Photo/kosovo-backpacking-itinerary-main-image-hd-op.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+
+}
+header{
+    padding: 55px;
+    display: flex;
+    justify-content:  space-around;
+}
+nav ul li{
+    display: inline-block;
+    padding: 10px 16px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li.active{
+    background-color: rgb(208, 166, 80);
+    border-radius: 5px;
+}
+.main-heading{
+    margin-top: 148px;
+    text-align: center;
+}
+.main-heading h1{
+    color: white;
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+.main-heading a{
+    text-decoration: none;
+    background-color:rgb(208, 166, 80);
+    font-size: 18px;
+    text-transform: uppercase;
+    color: aliceblue;
+    border-radius: 5px;
+    padding: 25px 85px;
+    
+}
+
+#section-2{
+    background-color: aqua;
+    min-height: 745px;
+    color: white;
+}
+.title-box{
+    text-align: center;
+    max-width: 609px;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer {
+    background-color: rgb(36, 74, 165);
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
