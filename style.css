@@ -1,10 +1,8 @@
-
 body{
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: rgb(255, 255, 255);
-    
-      
+    background-color: rgb(208, 166, 80);
+        
 
 }
 #section1{
@@ -16,9 +14,20 @@ body{
     background-repeat: no-repeat;
     
 }
+#section2{
+    background-color: rgb(36, 74, 165);
+    height: 800px;
+    background-image: url("Photo/4c56756898d633b36107f305da70351d.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
 .container{
     margin-left: auto;
     margin-right: auto;
+    padding: 30px;
+    margin: 40px;
     height: 100%;
 
 }
@@ -61,8 +70,6 @@ nav ul li.active{
     
 }
 
-
-
 #Mirësevini{
     text-align: center;
     color: white;
@@ -77,19 +84,20 @@ nav ul li.active{
 }
 section {
     flex: 2;
-    background:rgb(208, 166, 80);
+    background: rgb(36, 74, 165);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 #K1{
-    color: white;
+    color:rgb(208, 166, 80);
     text-align: center;
 }
 
 footer {
     background-color: rgb(36, 74, 165);
     padding: 10px;
+    margin: 40px;
     text-align: center;
     color: white;
   }
