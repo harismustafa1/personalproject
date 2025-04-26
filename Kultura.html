@@ -1,270 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <section id="section1">
+    <section id="section6">
         <div class="container">
             <header>
                 <img id="hg" src="Photo/Emblem_of_the_Republic_of_Kosovo.svg.png" width="80" alt="f">
                 <nav>
                     <ul>
                         <li>
-                            <li class="active"><a href="Etimologjia.html">Etimologjia</a></li>
-                            <li><a href="Historia.html">Historia</a></li>
-                            <li><a href="Gjeografia.html">Gjeografia</a></li>
-                            <li><a href="Ekonomia.html">Ekonomia</a></li>
-                            <li><a href="Kultura.html">Kultura</a></li>
+                        <li class="active"><a href="Etimologjia.html">Etimologjia</a></li>
+                        <li><a href="Historia.html">Historia</a></li>
+                        <li><a href="Gjeografia.html">Gjeografia</a></li>
+                        <li><a href="Ekonomia.html">Ekonomia</a></li>
+                        <li><a href="Kultura.html">Kultura</a></li>
                         </li>
                     </ul>
                 </nav>
             </header>
             <div class="main-heading">
-                <h1>"Kosova: Historia dhe natyra në çdo hap."</h1>
+                <h1>"Kosova: Kultura e Kosovës."</h1>
                 <a href="#">Eksploro Kosovën</a>
             </div>
-           
+
         </div>
 
         <div class="container1">
             <section id="Kosova1">
-                <h2 id="Mirësevini">Mirësevini në Kosovë</h2>
-                <p id="K1">Kosova (historikisht Dardania), zyrtarisht Republika e Kosovës, është një shtet
-                     i pavarur në Evropën Juglindore. Shtrihet në qendër të Gadishullit Ballkanik
-                      dhe kufizohet në në jugperëndim me Shqipërinë, në perëndim me Malin e Zi, në veri 
-                    dhe në lindje me Serbinë dhe në juglindje me Maqedoninë e Veriut. Ka një sipërfaqe 
-                    prej 10.887 km² dhe popullsi prej rreth 1.6 milion banorësh rezident, nga të cilët 
-                    shumica dërrmuese janë shqiptarë me rreth 92%.</p>
-            </section>  
+                <h2 id="Mirësevini">Kultura e Kosovës</h2>
+                <p id="K1">Kultura kosovare ngërthen në vete kulturën e kombit shqiptar, si trashëguese të kulturës
+                    vendëse ilire, të ndikuar më vonë kryesisht nga kultura romake dhe osmane e më pak nga ajo sllave.
+                    Përcaktimi kulturor kosovar është perëndimor, mirëpo ruan në vete elemente konservatore evropiane
+                    dhe disa veti të kulturës lindore, të përfituara nga shekujt e sundimit osman. Ndikimi i thellë
+                    vërehet sidomos nga e drejta dokesore e shqiptarëve, e përkufizuar nga katër parime — nderin vetjak,
+                    barazinë e vetëve, lirinë e veprimit në kuadër të ligjit, si dhe besën</p>
+            </section>
         </div>
+        
+        <section class="photo-slider">
+            <h2>Shëtitje përmes Kosovës</h2>
+            <div class="slider">
+              <div class="slide-track">
+                <div class="slide"><img src="Photo/prishtina.jpg" alt="Prishtina"></div>
+                <div class="slide"><img src="Photo/Peja.jpg" alt="Peja"></div>
+                <div class="slide"><img src="Photo/Prizren.webp" alt="Prizreni"></div>
+                <div class="slide"><img src="Photo/parku-germia.jpg" alt="Germia Park"></div>
+                <div class="slide"><img src="Photo/sharri.avif" alt="Bjeshkët e Sharrit"></div>
+                <div class="slide"><img src="Photo/Brezovica.jpg" alt="Brezevica"></div>
+                <div class="slide"><img src="Photo/shpella.avif" alt="Prizreni"></div>
+                <div class="slide"><img src="Photo/ulpiana.jpg" alt="Germia Park"></div>
+                <div class="slide"><img src="Photo/Muzeu_Etnologjik_në_Prishtine.JPG" alt="Bjeshkët e Sharrit"></div>
+                <div class="slide"><img src="Photo/newborn.png" alt="Brezevica"></div>
+                
+              </div>
+            </div>
+          </section>
+          <style>
+            .photo-slider {
+              padding: 50px 20px;
+              background: rgb(36, 74, 165);
+              text-align: center;
+            }
+            
+            .photo-slider h2 {
+              color: rgb(208, 166, 80);
+              margin-bottom: 30px;
+              font-size: 28px;
+            }
+            
+            .slider {
+              overflow: hidden;
+              position: relative;
+              width: 90%;
+              margin: auto;
+            }
+            
+            .slide-track {
+              display: flex;
+              width: calc(250px * 12); /* numri i fotove × madhësia e një slide */
+              animation: scroll 30s linear infinite;
+            }
+            
+            .slide {
+              width: 250px;
+              height: 150px;
+              margin-right: 20px;
+              flex-shrink: 0;
+              border-radius: 15px;
+              overflow: hidden;
+              box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            }
+            
+            .slide img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+            
+            @keyframes scroll {
+              0% { transform: translateX(0); }
+              100% { transform: translateX(calc(-250px * 6)); }
+            }
+            </style>
+          
 
 
         <style>
-        aside {
-            flex: 20px;
-            background: rgb(208, 166, 80);
-            padding: 20px;
-            border-radius: 30px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        table {
-            width: 50%;
-            margin: 20px auto;
-            border-collapse: collapse;
-        }
-        table, th, td {
-            border: 1px solid rgb(255, 255, 255);
-        }
-        th, td {
-            padding: 10px;
-            text-align: left;
-        }
-        th {
-            background-color:rgb(36, 74, 165);
-            color: white;
-        }
+            aside {
+                flex: 20px;
+                background: rgb(208, 166, 80);
+                padding: 20px;
+                border-radius: 30px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
         </style>
-    <aside>
-        <h2 id="Informacione">Informacione rreth Kosovës</h2>
-        <table>
-            <tr>
-                <th>Veçori</th>
-                <th>Detajet</th>
-            </tr>
-            <tr>
-                <td>Kryeqyteti</td>
-                <td>Prishtina (42°40′N 21°10′E)</td>
-            </tr>
-            <tr>
-                <td>Qyteti më i madh</td>
-                <td>Prishtina</td>
-            </tr>
-            <tr>
-                <td>Gjuhët zyrtare</td>
-                <td>Shqip, Serbisht</td>
-            </tr>
-            <tr>
-                <td>Gjuhët rajonale</td>
-                <td>Boshnjakisht, Turqisht, Romisht</td>
-            </tr>
-            <tr>
-                <td>Grupet etnike (2024)</td>
-                <td>92% shqiptarë, 2% serbë, 1% boshnjakë, 1% turq, 1% romë</td>
-            </tr>
-            <tr>
-                <td>Feja (2024)</td>
-                <td>93% Islami, 4% Krishtërimi, 0.5% afetarë, 0.5% tjerë, 1.5% të padeklaruar</td>
-            </tr>
-            <tr>
-                <td>Demonim(et)</td>
-                <td>Kosovar</td>
-            </tr>
-            <tr>
-                <td>Qeverisja</td>
-                <td>Republikë parlamentare</td>
-            </tr>
-            <tr>
-                <td>Presidentja</td>
-                <td>Vjosa Osmani-Sadriu</td>
-            </tr>
-            <tr>
-                <td>Kryeministri</td>
-                <td>Albin Kurti</td>
-            </tr>
-            <tr>
-                <td>Kryetari i Kuvendit</td>
-                <td>Glauk Konjufca</td>
-            </tr>
-            <tr>
-                <td>Themelimi</td>
-                <td>Shpallja e Pavarësisë – 17 shkurt 2008</td>
-            </tr>
-            <tr>
-                <td>Sipërfaqja</td>
-                <td>10,905.25 km² (4,210.54 sq mi)</td>
-            </tr>
-            <tr>
-                <td>Popullsia (2024)</td>
-                <td>1,586,659</td>
-            </tr>
-            <tr>
-                <td>Valuta</td>
-                <td>Euro (€) (EUR)</td>
-            </tr>
-            <tr>
-                <td>Zona kohore</td>
-                <td>UTC+1 (ZKEQ), Verës: UTC+2 (OVEQ)</td>
-            </tr>
-            <tr>
-                <td>Prefiksi telefonik</td>
-                <td>+383</td>
-            </tr>
-        </table>
-    </aside>
-    
-    <div class="container1">
-        <section id="Kosova1">
-            <h2 id="Mirësevini">Emri i Kosovës</h2>
-            <p id="K1">Interpretimin e parë të emrit ‘’Kosova’’, e ka bërë akademiku kroat 
-                Josip Rogliç, i cili thotë se: ‘’e tërë terminologjia gjeomorfologjike dhe 
-                emrat gjeografikë të Gadishullit Ilir janë të gjuhës ilire’’, duke ardhur 
-                dhe në përfundim që, terminologjia e emrit gjeografikë ‘’Kosova’’, i takon
-                 gjuhës ilire.Po ashtu interpretimin gjeografik të emrit e shpjegon dheM. Carabregu, 
-                i cili thotë se, termi ‘’kas-a’’ përmban kuptimet e një kodre, mali
-                 apo shkëmbi. Variantet e shpeshta të emrit që ndër kohë paraqitën 
-                 si, ‘’Kasova’’, ‘’Kasava’’ dhe ‘’Kosova’’ na japin ‘’kas-a’’ dhe ‘’va’’,
-                  që të dy terma gjeografikë. Në bazë të këtij termi gjeografik ‘’kas’’, 
-                  janë gjithashtu edhe emrat: Cassel, Castel, Cashtel, Casteli etj.
-                   Ky term përdoret edhe për emër personal, fisnor dhe po ashtu si emër 
-                   vendi, si: Kas-i, Kasaj, Canius, Kastrat, Kastriot, Kasendra, Kas, etj. 
-                   Këtyre qëndrimeve, ju shtojmë disa shembuj që vërtetojnë këto të dhëna.
-                    Psh., Fisi “Kastrat” e ka djepin në Veri të Shqipërisë. Emri “Kastrat” 
-                    në shqipen nuk është shumë i vjetër, ky emër vjen nga latinishtja ‘’Castrum’’. 
-                    Qyteti mesjetar ‘’Kassa’’në Hungari, në gjuhën gjermane shqiptohet ‘’Kaschau’’ ndërsa në 
-                gjuhën latine ‘’Cassovia’’. Sipas dokumenteve dubrovnikase, familja aristokrate ‘’Kasica’’ q
-                ë jetonte në Dubrovnik, ishte me prejardhje nga qyteti Novomonte (Novobërda), etj.</p>
-        </section>  
-    </div>
+        <aside>
+            <div class="container1">
+                <section id="Kosova1">
+                    <h2 id="Mirësevini">Letërsia dhe artet në Kosovë</h2>
+                    <p id="K1">Letërsia në Kosovë nis me librin kishtar Meshari, të parin libër të botuar në gjuhën
+                        shqipe nga Gjon Buzuku, me prejardhje nga krahina e Hasit. Andre Bogdani botoi gramatikën e parë
+                        të gjuhës shqipe, mirëpo kjo vepër humbi gjatë luftimeve kundër osmanëve dhe për të mësohet
+                        vetëm nga shkrimet e nipit Pjetër Bogdani, autor i Çetës së Profetëve, kryevepër e letërsisë së
+                        vjetër shqiptare.[93]
 
-        
+                        Zhvillmi i letërsisë në Kosovë nuk arriti nivel të duhur deri pas Luftës së Dytë Botërore, kur
+                        themelimi i shtëpisë botuese Rilindja hapi rrugët për botimin e një morie veprash letrare. Esad
+                        Mekuli konsiderohet si nismëtari i letërsisë moderne në Kosovë.[94] Në prozë u dalluan Anton
+                        Pashku, Anton Çetta, Nazmi Rrahmani, Zejnullah Rrahmani, Rexhep Qosja, Sinan Hasani etj. Prej
+                        poetëve më të përmendur janë Ali Podrimja, Azem Shkreli, Sabri Hamiti, Jeton Kelmendi, Din
+                        Mehmeti, Rrahman Dedaj etj. Autorët bashkëkohorë kosovarë kryesisht trajtojnë tema të lëvizjes
+                        kombëtare, transformimit shoqëror, mërgimit, si dhe luftës e pavarësisë.
 
-    <section class="tour-kosovo">
-        <div class="container">
-          <h2>Republika e Kosovës</h2>
-          <p>Republic of Kosovo<br>
-            Republika e Kosovës (Albanian)<br>
-            Република Косово / Republika Kosovo (Serbian)<br>
+                        Kosova ka edhe katër teatre kombëtare dhe profesioniste, të cilët numërojnë 65 punëtorë dhe
+                        rreth 18.440 spektatorë në vit. Njëherësh, funksionojnë edhe 21 teatre amatore si dhe teatri i
+                        fëmijëve. Ndonëse popullariteti i teatrit ka rënë në vitet e fundit, gjatë vitit 2006 u dhanë
+                        612 shfaqje teatrale, ndërsa arte tjera si baleti u vunë në skenë vetëm një herë. Më popullore
+                        ishin koncertet, prej të cilave u dhanë 117 dhe mblodhën rreth 100 mijë spektatorë. Në galeri
+                        arti u organizuan 109 ekspozita.</p>
+                </section>
+            </div>
+        </aside>
+
+        <section class="culture-gallery">
+            <div class="culture-card">
+              <img src="Photo/250px-VeshjeKombetare.jfif" alt="Kultura 1">
+              <h2>Vallet Tradicionale</h2>
+              <p>Vallet janë pjesë e rëndësishme e festave tona popullore.</p>
+            </div>
           
-          <div class="places">
-            <div class="place">
-              <img src="Photo/Flag_of_Kosovo.svg (1).png" width="100px"  height="300px" alt="Flamuri">
-              <h3>Flamuri i Kosovës </h3>
-              <p>Flamuri i Kosovës u miratua më 17 shkurt 2008,
-                 në ditën e shpalljes së pavarësisë. Ai ka një 
-                 sfond blu, me një hartë të artë të Kosovës në 
-                 qendër dhe gjashtë yje të bardha harkuar mbi 
-                 të, që përfaqësojnë gjashtë komunitetet kryesore në vend.</p>
-              
+            <div class="culture-card">
+              <img src="Photo/kulla.jpg" alt="Kultura 2">
+              <h2>Kullat e Vjetra</h2>
+              <p>Arkitektura e vjetër e kullave reflekton historinë tonë.</p>
             </div>
-            
-            <div class="place">
-              <img src="Photo/Emblem_of_the_Republic_of_Kosovo.svg.png" width="100px"  height="300px" alt="Emblema">
-              <h3>Emblema e Kosovës </h3>
-              <p>Emblema e Kosovës ka një mburojë blu me një
-                 hartë të artë të vendit në mes dhe gjashtë
-                  yje të bardha sipër saj. Dizajni i saj është 
-                  i ngjashëm me flamurin dhe simbolizon shtetësinë
-                   dhe unitetin e Kosovës.</p>
-              
+          
+            <div class="culture-card">
+              <img src="Photo/veshjet.jpg" alt="Kultura 3">
+              <h2>Veshjet Kombëtare</h2>
+              <p>Veshjet tradicionale simbolizojnë identitetin kombëtar.</p>
             </div>
-            
-            <div class="place">
-              <img src="Photo/Lokacioni.png" width="100px"  height="300px" alt="Vendndodhja e Kosovës">
-              <h3>Vendndodhja e Kosovës </h3>
-              <p>Kosova ndodhet në Evropën Juglindore, në rajonin e
-                 Ballkanit Perëndimor. Kufizohet me Serbinë në veri 
-                 dhe lindje, Maqedoninë e Veriut në jug, Shqipërinë
-                  në jugperëndim dhe Malin e Zi në perëndim. Kryeqyteti 
-                  i Kosovës është Prishtina.</p>
-              
+          </section>
+          
+        <aside>
+            <div class="container1">
+                <section id="Kosova1">
+                    <h2 id="Mirësevini">Mediat popullore në Kosovë</h2>
+                    <p id="K1">Më 2006, 14 kinematë e vendit mblodhën 56.791 shikues, kryesisht për filma të huaj,
+                        përderisa industria vendore e filmit vuan nga mungesa e sasisë, por edhe cilësisë. Megjithatë,
+                        në Kosovë janë nxjerrë prodhime cilësore si Era dhe Lisi i regjisorit Isa Qosja, Njeriu prej
+                        Dheut dhe Vjeshta e Trëndafilave të Agim Sopit etj.
+
+                        Më popullore janë serialit e prodhimit vendor dhe të huaj. Kafeneja Jonë, e drejtuar nga
+                        veterani Adem Mikullovci, dhe Familja Moderne, me skenariste Visare Aliun dhe regjisor Fatos
+                        Berishën, kanë grumbulluar filmbërësit dhe artistët më të suksesshëm të vendit dhe kanë arritur
+                        shikueshmëri rekorde, ndonëse vazhdojnë të kritokohet për mungesë të punës profesionale dhe për
+                        përmbajtje.[95]
+
+                        Në Kosovë veprojnë katër televizione me licensë për transmetim mbarëkombëtar, Radiotelevizioni
+                        Publik i Kosovës, Radiotelevizioni 21, KohaVision dhe Klan Kosova. Veç tyre, ka edhe një numër
+                        televizionesh vendore e kombëtare që transmetojnë përmes sistemeve kabllore.</p>
+                </section>
             </div>
-          </div>
-        </div>
-      </section>
-      <style>
-        .tour-kosovo {
-          text-align: center;
-          padding: 50px 20px;
-          background-color: #f4f4f4;
-        }
-        .container {
-          max-width: 1100px;
-          margin: auto;
-        }
-        .places {
-          display: flex;
-          justify-content: space-around;
-          flex-wrap: wrap;
-          margin-top: 30px;
-        }
-        .place {
-          width: 30%;
-          background: white;
-          padding: 15px;
-          border-radius: 10px;
-          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        .place img {
-          width: 100%;
-          border-radius: 10px;
-        }
-        .place h3 {
-          margin-top: 10px;
-          font-size: 20px;
-        }
-        .place p {
-          font-size: 14px;
-          color: #555;
-        }
+        </aside>
+        <aside>
+            <div class="container1">
+                <section id="Kosova1">
+                    <h2 id="Mirësevini">Sporti në Kosovë</h2>
+                    <p id="K1">Sporti më popullor në Kosovë është futbolli, i përcjellë nga basketbolli, hendbolli,
+                        volejbolli dhe sportet luftarake. Që prej 20 vjetësh, sporti kosovar ka vuajtur nga mungesa e
+                        kushteve për zhvillim, fondeve dhe izolimi ndërkombëtar. Federatat e vetme të rëndësishme që
+                        janë pranuar ndërkombëtarisht janë ajo e hendbollit[96] dhe e pingpongut.
 
-      </style>
-      
-      
-        
-    </body>
-    <footer>
-        <p>Copyright © Kosova. All rights reserved.</p>
-      </footer>
-    </html>
-            
+                        Themeluar më 1922, KF Prishtina është klubi më i vjetër sportiv në Kosovë, i cili me
+                        pjesëmarrjen në Ligën e Parë të Jugosllavisë në vitet ’80 u shndërrua në simbol të lëvizjes
+                        kombëtare shqiptare. Sot, kombëtarja e Kosovës udhëhiqet nga ylli i dikurshëm i Prishtinës,
+                        Fadil Vokrri, dhe është në pritje të përvojës ndërkombëtare. Ndeshja e fundit, e zhvilluar më
+                        2007 kundër Arabisë Saudite, përfundoi me fitoren e kosovarëve.[97]
+
+                        Me gjithë nivelin e lartë në Jugosllavi, loja e koshave u popullarizua në Kosovë vetëm pas
+                        luftës, kur filloi zhvillimi i kampionatit në salla sportive. Mirëpo, interesimi i sponsorëve u
+                        venit me mosndërkombëtarizimin e këtij sporti, ndërsa derdhja e të hollave në lojtarë të
+                        importuar dhe mosinvestimi në talentët e rinj vendorë ka penguar zhvillimin e pritur të
+                        basketbollit.
+
+                        Ndërkaq, suksesi më i madh në arenën ndërkombëtare gjatë historisë është korrur në boks, mundje,
+                        karate dhe sporte tjera luftarake. Kosova nxori fitues medaljesh në lojëra olimpike, ndërsa
+                        klubi i boksit Prishtina vargoi tituj kampioni në Jugosllavia./p>
+                </section>
+            </div>
+        </aside>
+
+          
 
 
 
 
+        <section class="tour-kosovo">
+            <div class="container">
+                <h2>Republika e Kosovës</h2>
+                <p>Republic of Kosovo<br>
+                    Republika e Kosovës (Albanian)<br>
+                    Република Косово / Republika Kosovo (Serbian)<br>
+
+                <div class="places">
+                    <div class="place">
+                        <img src="Photo/Flag_of_Kosovo.svg (1).png" width="100px" height="300px" alt="Flamuri">
+                        <h3>Flamuri i Kosovës </h3>
+                        <p>Flamuri i Kosovës u miratua më 17 shkurt 2008,
+                            në ditën e shpalljes së pavarësisë. Ai ka një
+                            sfond blu, me një hartë të artë të Kosovës në
+                            qendër dhe gjashtë yje të bardha harkuar mbi
+                            të, që përfaqësojnë gjashtë komunitetet kryesore në vend.</p>
+
+                    </div>
+
+                    <div class="place">
+                        <img src="Photo/Emblem_of_the_Republic_of_Kosovo.svg.png" width="100px" height="300px"
+                            alt="Emblema">
+                        <h3>Emblema e Kosovës </h3>
+                        <p>Emblema e Kosovës ka një mburojë blu me një
+                            hartë të artë të vendit në mes dhe gjashtë
+                            yje të bardha sipër saj. Dizajni i saj është
+                            i ngjashëm me flamurin dhe simbolizon shtetësinë
+                            dhe unitetin e Kosovës.</p>
+
+                    </div>
+
+                    <div class="place">
+                        <img src="Photo/Lokacioni.png" width="100px" height="300px" alt="Vendndodhja e Kosovës">
+                        <h3>Vendndodhja e Kosovës </h3>
+                        <p>Kosova ndodhet në Evropën Juglindore, në rajonin e
+                            Ballkanit Perëndimor. Kufizohet me Serbinë në veri
+                            dhe lindje, Maqedoninë e Veriut në jug, Shqipërinë
+                            në jugperëndim dhe Malin e Zi në perëndim. Kryeqyteti
+                            i Kosovës është Prishtina.</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <style>
+            .tour-kosovo {
+                text-align: center;
+                padding: 50px 20px;
+                background-color: #f4f4f4;
+            }
+
+            .container {
+                max-width: 1100px;
+                margin: auto;
+            }
+
+            .places {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                margin-top: 30px;
+            }
+
+            .place {
+                width: 30%;
+                background: white;
+                padding: 15px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .place img {
+                width: 100%;
+                border-radius: 10px;
+            }
+
+            .place h3 {
+                margin-top: 10px;
+                font-size: 20px;
+            }
+
+            .place p {
+                font-size: 14px;
+                color: #555;
+            }
+        </style>
 
 
 
+</body>
+<footer>
+    <p>Copyright © Kosova. All rights reserved.</p>
+</footer>
+
+</html>
